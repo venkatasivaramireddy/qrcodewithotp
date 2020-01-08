@@ -1,0 +1,22 @@
+<html>
+<body>
+<form action="{% url 'register_details' %}" method="post">
+{% csrf_token %}
+    <h1>Register page</h1>
+<table align="center" border="2">
+    <tr>
+        <th><input type="text" placeholder="Enter Username" required name="t1"></th>
+    </tr>
+    <tr>
+        <th><input type="password" placeholder="Enter password" required name="t2"></th>
+    </tr>
+    <tr>
+        <th><button type="submit">Submit</button></th>
+    </tr>
+</table>
+{#    {% if message %}#}
+{#        {{ message }}#}
+{#    {% endif %}#}
+</form>
+</body>
+</html>

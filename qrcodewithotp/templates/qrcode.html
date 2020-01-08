@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<form action="{% url 'otpvalidation' %}" method="Post">
+    {% csrf_token %}
+    <table align="center" border="2">
+        <tr>
+            <th><img src="{% static 'image/one.jpg' %}"></th>
+        </tr>
+        <tr>
+            <th><input type="number" placeholder="Enter OTP" required name="otp"></th>
+        </tr>
+        <tr>
+            <th><button type="submit">Submit</button></th>
+        </tr>
+    </table>
+</form>

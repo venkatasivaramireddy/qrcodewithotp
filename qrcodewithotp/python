@@ -1,0 +1,4 @@
+Operations to perform:
+  Apply all migrations: admin, app, auth, contenttypes, sessions
+Running migrations:
+  Applying app.0001_initial... OK
